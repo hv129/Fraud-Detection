@@ -4,7 +4,7 @@ Dataset Link: https://drive.google.com/file/d/1HbNxPW3V0ln7OgRc-t-wKtT7HsgFValZ/
 
 # Fraud detection models
 
-Isolation Forest Algorithm:
+### Isolation Forest Algorithm:
 
 The algorithm is based on the fact that anomalies are data points that are few and different. As a result of these properties, anomalies are susceptible to a mechanism called isolation.
 
@@ -14,12 +14,12 @@ How Isolation Forests Work The Isolation Forest algorithm isolates observations 
 
 The way that the algorithm constructs the separation is by first creating isolation trees, or random decision trees. Then, the score is calculated as the path length to isolate the observation.
 
-Local Outlier Factor(LOF) Algorithm:
+### Local Outlier Factor(LOF) Algorithm:
 
 The LOF algorithm is an unsupervised outlier detection method which computes the local density deviation of a given data point with respect to its neighbors. It considers as outlier samples that have a substantially lower density than their neighbors.
 
 The number of neighbors considered, (parameter n_neighbors) is typically chosen 1) greater than the minimum number of objects a cluster has to contain, so that other objects can be local outliers relative to this cluster, and 2) smaller than the maximum number of close by objects that can potentially be local outliers. In practice, such informations are generally not available, and taking n_neighbors=20 appears to work well in general.
 
-Decision Tree Algorithm:
+### Decision Tree Algorithm:
 
 A decision tree builds upon iteratively asking questions to partition data. The aim of the decision tree algorithm is to increase the predictiveness as much as possible at each partitioning so that the model keeps gaining information about the dataset. Randomly splitting the features does not usually give us valuable insight into the dataset. Splits that increase purity of nodes are more informative. The purity of a node is inversely proportional to the distribution of different classes in that node. The questions to ask are chosen in a way that increases purity or decrease impurity.
